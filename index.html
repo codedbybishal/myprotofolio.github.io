@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- this is for not making your content of ebsite bangotingo in another pc   -->
+    <title>Bishal </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <section class="header"><!-- first screen -->
+    <nav>
+        <a href="1st.html"><img src ="lg.png"></a>
+    </nav>
+    
+        <div class="links">
+            <ul>
+                <a href="index.html" >Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about me.html">About me</a>
+                <a href="contact.html">Contact</a>
+                <a href="tech stack.html">Tech Stack</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="fun facts.html">Fun facts</a>
+                <span></span>
+            </ul>
+        </div>
+   
+    
+    <div class="textbox">
+        <h1>Welcome to my personal website!   <br><span>I’m Bishal Kumar Yadav, and I’m excited to share my journey, projects, and passions with you.</span><br> Take a look around, and feel free to reach out if you’d like to  connect!</h1>
+        <a href="#projects" class="explore-btn">Explore</a>
+    </div>
+    
+    <!-- Other sections on the page -->
+    <!-- <div id="next-section">
+        
+    </div>
+    </div> -->
+        
+        <div class="texts" >
+                        
+                <h2><span>Here are</span>  some of my <span>Projects</span></h2>
+      </div>
+
+      <a href="about me.html"><div class="aboutme">
+        <h1>About me</h1>
+        <p>A deep dive into my interests, skills, and creative journey. From tech to design, here’s everything that shapes who I am.
+        Click here to explore more!</p>
+      </div></a>
+
+      <a href="contact.html"  class="contact-link"><div class="contact">
+        <h1>Get in Touch</h1>
+      
+        <p>If you have any questions or just want to say hello, feel free to reach out!</p>
+      
+      
+        <a href="mailto:bishalyadav2008@gmail.com" class="email-link">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+      
+      </div>
+    </a>
+      
+
+<div class="container" id="projects">
+    <div class="card">
+      <a href="treess.html"><img src="backroundimg.avif" alt="Trees"></a>
+<div class="intro">
+    <h1>Prject on Trees</h1>
+    <p>
+        <span>Trees</span>provide oxygen, improve air quality, and combat climate change. They support wildlife, prevent soil erosion, and beautify our surroundings.
+        Click on the image to explore more.
+    </p>
+</div>
+</div>
+<div class="card">
+  <a href="ironman.html"><img src="ironman.jpg" alt="ironman"></a>
+    <div class="intro">
+        <h1>Project on ironman</h1>
+        <p>
+            Explore the world of<span>Iron man</span>from his cutting-edge suits to his impact on technology and pop culture.
+            Click on the image to dive deeper.
+        </p>
+    </div>
+    </div>
+    <div class="card">
+        <a href="avengers.html"><img src="avengers.jpg" alt="avengers"></a>
+        <div class="intro">
+            <h1>Project on avengers</h1>
+            <p>
+               <span>Unite</span> with Earth's mightiest heroes — explore their powers, stories, and the epic battles that saved the universe.
+               Click on the image to discover more.
+            </p>
+        </div>
+        </div>
+        </div>
+        </section>
+   
+        <!-- testimonials -->
+         <!-- AOS CSS -->
+
+
+<section id="testimonials">
+  <h2 class="section-title" data-aos="fade-up">💬 What People Say</h2>
+  <div class="card-container">
+    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+      <p>"Bishal is a coding beast! His creativity and design sense are next level."</p>
+      <h4>–delip joshi,murlidharan</h4>
+    </div>
+    <div class="testimonial-card lime" data-aos="zoom-in" data-aos-delay="300">
+      <p>"Love his website! Super unique, and full of personality."</p>
+      <h4> Anonymous thoughts</h4>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2 class="section-title" data-aos="fade-up">🏆 Achievements & Certifications</h2>
+  <div class="card-container">
+    <div class="achievement-card gold" data-aos="fade-right" data-aos-delay="150">
+      <h3>HTML & CSS Mastery</h3>
+      <p>Completed beginner to advanced web design bootcamp.</p>
+    </div>
+    <div class="achievement-card orange" data-aos="fade-left" data-aos-delay="300">
+      <h3>1st Place – School Coding Comp</h3>
+      <p>Won a web development competition with a creative portfolio website.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- <div class="info-bar">
+    <span class="info-text">Now you visit my next page by clicking on this button:</span>
+    <a href="gallery.html"><button class="next-btn">Next</button></a>
+  </div> -->
+  <div class="bottombar">
+    <!-- <b> you can explore my next page by just clicking here --- </b> -->
+
+     <span class="info-text">Now you visit my next page by clicking on this button:</span><a href="gallery.html"><button class="botn">Next</button></a>     
+  </div>
+            <!-- <div class="button">
+                
+                <a href="about me.html"> Button </a>
+            </div> -->
+            <script>
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            </script>
+            
+</body>
+</html>

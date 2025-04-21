@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- this is for not making your content of ebsite bangotingo in another pc   -->
+    <title>Bishal </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header"><!-- first screen -->
+    <nav>
+        <a href="1st.html"><img src ="lg.png"></a>
+    </nav>
+    
+        <div class="links">
+            <ul>
+                <a href="index.html" >Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about me.html">About me</a>
+                <a href="contact.html">Contact</a>
+                <a href="tech stack.html">Tech Stack</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="fun facts.html">Fun facts</a>
+                <span></span>
+            </ul>
+        </div>
+    </section>
+    <div class="gallery-section">
+        <h2>My Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="darkb.jpg" alt="Image 1" onclick="openLightbox('darkb.jpg')">
+                <div class="image-title">Dark magical</div>
+                <a href="darkb.jpg" download class="download-btn">Download</a>
+            
+            </div>
+            <div class="gallery-item">
+                <img src="dpme.jpg" alt="Image 2" onclick="openLightbox('dpme.jpg')">
+                <div class="image-title">Power</div>
+                <a href="dpme.jpg" download class="download-btn">Download</a>
+            </div>
+            <div class="gallery-item">
+                <img src="dp2.jpg" alt="Image 3" onclick="openLightbox('dp2.jpg')">
+                <div class="image-title">warrior</div>
+                <a href="dp2.jpg" download class="download-btn">Download</a>
+            </div>
+            <div class="gallery-item">
+                <img src="background.jpg" alt="Image 4" onclick="openLightbox('background.jpg')">
+                <div class="image-title">Ninja</div>
+                <a href="background.jpg" download class="download-btn">Download</a>
+            </div>
+            <div class="gallery-item">
+                <img src="backroundimg.avif" alt="Image 4" onclick="openLightbox('backgroundimg.avif')" >
+                <div class="image-title">Tree</div>
+                <a href="backroundimg.avif" download class="download-btn">Download</a>
+            </div>
+            <div class="gallery-item">
+                <img src="cyberpunk.jpg" alt="Cyberpunk City" onclick="openLightbox('image6.jpg')">
+                <div class="image-title">Cyberpunk City</div>
+                <a href="cyberpunk.jpg" download class="download-btn">Download</a>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="sunset.jpg" alt="Sunset" onclick="openLightbox('image7.jpg')">
+                <div class="image-title">Sunset</div>
+                <a href="sunset.jpg" download class="download-btn">Download</a>
+            </div>
+    
+            <div class="gallery-item">
+                <img src="galaxy.jpg" alt="Galaxy" onclick="openLightbox('image8.jpg')">
+                <div class="image-title">Galaxy</div>
+                <a href="galaxy.jpg" download class="download-btn">Download</a>
+            </div>
+            <div class="gallery-item">
+                <img src="god.jpg" alt="Galaxy" onclick="openLightbox('image8.jpg')">
+                <div class="image-title">Galaxy</div>
+                <a href="god.jpg" download class="download-btn">Download</a>
+            </div>
+            <div class="gallery-item">
+                <img src="magician.jpg" alt="Galaxy" onclick="openLightbox('image8.jpg')">
+                <div class="image-title">Galaxy</div>
+                <a href="magician.jpg" download class="download-btn">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Large Image">
+    </div>
+
+    <script>
+        // Function to open the lightbox modal and show the selected image
+function openLightbox(imageSrc) {
+    var modal = document.getElementById('lightbox-modal');
+    var lightboxImage = document.getElementById('lightbox-image');
+    
+    lightboxImage.src = imageSrc; // Set the source of the image in the modal
+    modal.style.display = 'flex';  // Show the modal
+}
+
+// Function to close the lightbox modal when clicked
+function closeLightbox() {
+    var modal = document.getElementById('lightbox-modal');
+    modal.style.display = 'none'; // Hide the modal
+}
+    </script>
+   
+   <div class="buttons-container1">
+    <!-- Link Button 1 (Go to next page) -->
+    <a href="home.html">
+      <button>Go back</button>
+    </a>
+    
+    <!-- Link Button 2 (Go back) -->
+    <a href="about me.html">
+      <button class="back-btn">Next→</button>
+    </a>
+  </div>
+
+
+    </body>
+    </html>
