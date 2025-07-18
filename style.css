@@ -192,31 +192,11 @@ box-shadow: 0 0 5px #03f4e0,
     0 0 10px #03ecf4,
     0 0 10px #03ecf4;
     padding: 3px 20px;
-    /* -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.507));  
-     */
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.507));   */
+    /* it is shadow  */
+    
 }
 
-.textbox::after{
-    content:'' ;
-    position: absolute;
-    inset: -3px;
-    background: conic-gradient(from 0deg, #d11149, #e68aff,#ff4800, #11ebff,#cdff58,#d11149);
-    z-index: -1;
-}
-
- .textbox :hover{
-    transition: 0.3s;
-    box-shadow: 0 0 3px #03e9f4,
-    0 0 5px#03e9f4,
-    0 0 5px #03e9f4,
-    0 0 30px #03e9f4;
-   
-        transform: scale(1.01);
-         /* Slight zoom-in */
-        box-shadow: 0 10px 25px #1d2222; Optional: 
-        /* Add a soft shadow */
-        
- }  
 
  
 .textbox span{
@@ -224,20 +204,88 @@ box-shadow: 0 0 5px #03f4e0,
     font-size: 35px;
     
 }
-.explore-btn{
+
+.textbox btn{
+  font-size: 20px;
+  position: absolute;
+display: inline-block;
+border-radius: 25px;
+text-align: center;
+background: #000;
+height: 30px;
+width: 130px;
+padding-bottom: 5px;
+padding-top: 10px;
+color: #ffffff;
+}
+
+/* .textbox btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width : 100%;
+  height : 100%;
+  background-color: #2c2b2b; */
+  /* background : (40deg,#fd0202,#000000,rgb(221, 218, 10)); */
+  /* background: linear-gradient(40deg,#fd0202,#000000,rgb(221, 218, 10));
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+} */
+/* .textbox btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+} */
+/* @keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+} */
+
+/* hover */
+/* .textbox btn::before {
+  opacity: 1;
+} */
+
+/* .textbox btn:active:after {
+  background: transparent;
+}
+
+.textbox btn:active {
+  color: #000;
+  font-weight: bold;
+} */
+
+/* .explore-btn{
     padding: 10px 20px;
     font-size: 16px;
     background-color: #000000; /* Different button color */
-    border: none;
+    /* border: none;
     border-radius: 25px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     transition: background-color 0.3s;
-    position: absolute;
+    position:absolute;
     top: 42%;
     left: 100px;
-    text-decoration: none;
-}
+    text-decoration: none; */
+ */
 .aboutme h1{
     margin-top: 5%;
     font-size: 35px;
@@ -600,14 +648,14 @@ font-size: 20px;
 /* button */
 .botn {
     position: relative;
-    left: 61%;
+    left: 19%;
     margin: 47px;
     padding: 15px 40px;
     border: none;
     outline: none;
     color: #000000;
     cursor: pointer;
-    position: relative;
+    /* position: absolute; */
     z-index: 0;
     border-radius: 12px;
   }
@@ -669,10 +717,10 @@ font-size: 20px;
 /* info-text */
 .info-text{
 /* height width position display */
-position: absolute;
+position: relative;
 display: inline-block;
-top: 223%;
-left: 21%;
+top: 215%;
+left: 13%;
 border-radius: 10px;
 text-align: center;
 height: 40px;
